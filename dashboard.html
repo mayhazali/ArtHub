@@ -12,6 +12,7 @@
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dashboard.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -20,11 +21,11 @@
 
 <body>
 
-  <section class="colored-section" id="title">
+  <section class="colored-section" id="navigation">
     <div class="container-fluid">
 
       <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark" id="home">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="">COMPANY</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,65 +33,46 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="./profile.html"><i class="profile fas fa-user-circle"></i></a>
+              <a class="nav-link" href="#footer"><i class="profile fas fa-user-circle"></i></a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <!-- Title Section-->
-      <div class="row">
-        <div class="col-lg-7">
-          <h1 class="big-heading">We Connect Small Businesses With Local Artists</h1>
-          <button type="button" class="get-started btn btn-lg btn-dark top-btn">Get Started</button>
-          <button type="button" class="login btn btn-lg btn-outline-light top-btn">Login</button>
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-4">
-          <img class="title-image" src="https://images.unsplash.com/photo-1594392174535-eb4b1043dad3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" alt="restaurant-wall">
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- Features -->
-
-  <section class="white-section" id="features">
+  <section>
     <div class="container-fluid">
-      <div class="row features-row">
-
-        <div class="feature-box col-lg-4">
-          <i class="features-icon fas fa-check"></i>
-          <h3 class="features-title">Simple Setup.</h3>
-          <p class="features-desc">Easily find an artist to collaborate with.</p>
-        </div>
-
-        <div class="feature-box col-lg-4">
-          <i class="features-icon fas fa-people-carry"></i>
-          <h3 class="features-title">Support Locally.</h3>
-          <p class="features-desc">Collaborate with artists in your area.</p>
-        </div>
-
-        <div class="feature-box col-lg-4">
-          <i class="features-icon fas fa-clock"></i>
-          <h3 class="features-title">Find work faster.</h3>
-          <p class="features-desc">Get matched with artists who are eager to start working.</p>
+      <h1>Welcome Back!</h1>
+      <p class="lead">
+        Based on your business' needs and the designer's skillset, we've curated a list of potential local freelancers for you to collaborate with.
+      </p>
+      <hr />
+      <div class="results">
+        
+        <!-- Wrap this in a for loop -->
+        <div class="card">
+          <div class="card-header">
+            <h4>Jane Smith</h4>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title"><i class="fas fa-map-marker-alt"></i> Los Angeles, CA 90024</h6>
+            <h6 class="card-title"><i class="fas fa-star"></i> $30/hour</h6>
+            <p class="card-text"><strong>Open to work on:</strong> Signs, Banners, and Brochures</p>
+            <p>Hi, my name is Jane and I am a freelance graphic designer based in LA.
+              I have experience in designing fliers and pamphlets for print.
+              I also love chalk-lettering, so if you'd like to put up a menu or signage,
+              I'm here for you! Looking forward to connect!</p>
+            <a href="#" class="btn btn-info">Connect with Jane</a>
+            <a href="#" class="btn btn-outline-info">View Jane's Portfolio</a>
+          </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- Call to Action -->
-
-  <section class="colored-section" id="cta">
-    <div class="container-fluid">
-      <h3 class="big-heading">Collaborate with local businesses and artists</h3>
-      <button class="btn btn-lg btn-dark get-started top-btn" type="button">Get Started Today</button>
-    </div>
-  </section>
 
   <!-- Footer -->
 
